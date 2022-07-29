@@ -1,0 +1,144 @@
+/** Paleta de Colores **/
+:root{
+    --primario: #5bb3e6;
+    --primariooscuro: #4694c2;
+    --secundario: #adf74c;
+    --secundariooscuro: #7eb931;
+    --blanco: #fff;
+    --negro: #000;
+    --gris: #EEE;
+    --fuentePrincipal: 'Indie Flower', cursive;
+}
+html{
+ box-sizing: border-box;
+ font-size: 62.5%;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+/**Globales**/
+
+
+body{
+    background-color: var(--blanco);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+.pageHeader{
+    margin-top: 15px;
+   
+}
+.pageHeader nav{
+    background: #2BA6CB;
+    block-size: 40px;
+    margin: 0 30px auto;
+    text-align: center;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    }
+    .pageHeader nav ul{
+    margin: 0 auto;
+    }
+    .pageHeader nav ul li{
+        float: inline-start;
+        display: inline;
+    }
+    
+    .pageHeader nav a:link, .pageHeader nav a:visited{
+        color: #FFF;
+        display: inline-block;
+        block-size: 30px;
+        padding: 5px 23px;
+        text-decoration: none;
+    }
+    .pageHeader nav a:hover, .pageHeader nav a:active,
+    .pageHeader nav .active a:link, .pageHeader nav .active a:visited{
+        background: #2795B6;
+        color: #FFF; 
+    }
+
+
+p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--gris);
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1,h2,h3{
+ text-align: center;
+ color: var(--secundario);
+ font-family: var(--fuentePrincipal);
+}
+h1{
+font-size: 4rem;
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 2.4rem;
+}
+
+/**Header**/
+
+/**Footer**/
+.footer{
+background-color: var(--primariooscuro);
+padding: 1rem 0;
+margin-top: 2rem;
+}
+.footer_texto{
+text-align: center;
+font-family: var(--secundario);
+font-size: 2.2rem;
+}
+/**Grid**/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+@media (min-width: 760px) {
+ .grid{
+    grid-template-columns: repeat(3, 1fr);
+ }
+ }
+/**Noticias**/
+
+.noticias{
+background-color: var(--primariooscuro);
+padding: 1rem;
+}
+.noticias__imagen{
+width: 100%;
+}
+.noticias__informacion{
+
+}
+.noticias__nombre{
+    font-size: 4rem;
+    color: var(--secundario)
+}
+.noticias__Descripcion{
+    font-size: 1.5rem;
+    color: var(--blanco);
+}
+.noticias__nombre,
+.noticias__Descripcion{
+    font-family: var(--fuentePrincipal);
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1.2;
+}
+
