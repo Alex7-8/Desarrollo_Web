@@ -128,4 +128,9 @@ margin: 2% auto;
 }
 
 
-
+@media (max-width: 760px) {
+    .pageHeader{
+        font-size: 0.8rem;
+        width: 100%;
+    }
+}

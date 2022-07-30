@@ -110,7 +110,12 @@
         }
         .dw{
            
-            width: 90%;
+            inline-size: 90%;
    
         }
+        .pageHeader{
+            font-size: 0.8rem;
+        }
     }
+
+
